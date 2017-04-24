@@ -1,0 +1,2 @@
+install gcc-arm-linux-gnueabi  lib32z1-dev lib32ncurses5-dev
+ change in ./build_msm8974pro_kernel.sh  arm-abi- to gcc-arm-linux-gnueabi-
