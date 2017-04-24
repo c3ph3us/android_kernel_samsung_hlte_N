@@ -1,2 +1,6 @@
 install gcc-arm-linux-gnueabi  lib32z1-dev lib32ncurses5-dev
-clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6
+clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7
+adjust CROSS_COMPILE (Makefile)
+export ARCH=arm
+make VARIANT_DEFCONFIG=msm8974_sec_hlte_eur_defconfig msm8974_sec_defconfig SELINUX_DEFCONFIG=selinux_defconfig
+make
